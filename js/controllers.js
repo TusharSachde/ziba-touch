@@ -738,7 +738,7 @@ angular.module('starter.controllers', ['myservices'])
 
     var paymentcomplete = function (data, status) {
         console.log(data);
-        window.location.href = "http://localhost/lyla-touch/#/tab/thankyou";
+        window.location.href = "http://localhost/ziba-touch/#/tab/thankyou";
     };
 
     var handler = StripeCheckout.configure({
@@ -769,7 +769,7 @@ angular.module('starter.controllers', ['myservices'])
         console.log(form);
         console.log("amount:" + amount);
         handler.open({
-            name: 'Lyla Loves',
+            name: 'Ziba',
             description: 'Total Amount: £ ' + amount,
             amount: amount * 100,
 
