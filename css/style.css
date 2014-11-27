@@ -1,35 +1,14 @@
 /* Empty. Add your own CSS if you like */
 
-@font-face {
-    font-family: 'Cheddar Jack';
-    src: url('CheddarJack.ttf');
-    font-weight: normal;
-}
-/*  Changes the name of the font. */
-
-@font-face {
-    font-family: 'Raleway';
-    src: url('Raleway-Regular.otf');
-    font-weight: normal;
-}
-@font-face {
-    font-family: 'Raleway';
-    src: url('Raleway-Light.otf');
-    font-weight: 300;
-}
-@font-face {
-    font-family: 'Raleway';
-    src: url('Raleway-Bold.otf');
-    font-weight: bold;
-}
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 body {
-    font-family: 'Raleway' !important;
+    font-family: 'Lato' !important;
 }
 input,
 button,
 select,
 textarea {
-    font-family: 'Raleway' !important;
+    font-family: 'Lato' !important;
 }
 .full-image {
     width: 100%;
@@ -79,7 +58,7 @@ a {
 }
 .bar.bar-royal .title {
     color: #696969;
-    font-family: 'Cheddar Jack' !important;
+    font-family: 'Lato' !important;
     font-size: 24px;
     text-transform: lowercase;
 }
@@ -155,7 +134,7 @@ img.socialicons {
     width: 10%;
 }
 .item-divider {
-    font-family: 'Cheddar Jack';
+    font-family: 'Lato';
     font-size: 21px;
 }
 .imageset {
