@@ -1,14 +1,25 @@
 /* Empty. Add your own CSS if you like */
 
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
-body {
-    font-family: 'Lato' !important;
+@font-face {
+    font-family: 'Futura';
+    src: url('futura-book.woff');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Futura';
+    src: url('futura-light.woff');
+    font-weight: 100;
+}
+@font-face {
+    font-family: 'Futura';
+    src: url('futura-bold.woff');
+    font-weight: 500;
 }
 input,
 button,
 select,
 textarea {
-    font-family: 'Lato' !important;
+    font-family: 'Futura' !important;
 }
 .full-image {
     width: 100%;
@@ -34,11 +45,11 @@ a {
     float: right;
 }
 .royal {
-    color: #FFABD3 !important;
+    color: #C1BCC0 !important;
 }
 .button-royal {
-    background-color: #FFABD3 !important;
-    border-color: #FFABD3 !important;
+    background-color: #c1bcc0 !important;
+    border-color: #c1bcc0 !important;
     color: #fff !important;
 }
 .button-positive {
@@ -58,23 +69,24 @@ a {
 }
 .bar.bar-royal .title {
     color: #696969;
-    font-family: 'Lato' !important;
+    font-family: 'Pacifico' !important;
     font-size: 24px;
     text-transform: lowercase;
+    font-weight: normal;
 }
 .bar.bar-royal .title:first-letter {
     text-transform: uppercase !important;
 }
 .bar-royal {
-    background-color: #E0F0FF !important;
-    border-color: #CCE6FD !important;
+    background-color: #c1bcc0 !important;
+    border-color: #BAB5B9 !important;
     border-bottom-width: 2px;
-    background-color: #E0F0FF !important;
-    background-image: linear-gradient(0deg, #E0F0FF, #E0F0FF 50%, transparent 50%) !important;
+    background-color: #c1bcc0 !important;
+    background-image: linear-gradient(0deg, #c1bcc0, #c1bcc0 50%, transparent 50%) !important;
     color: #696969 !important;
 }
 .tabs .tab-item {
-    color: #696969;
+    color: #4d4d4d;
 }
 .item {
     color: #a8a8a8 !important;
@@ -92,8 +104,8 @@ p {
     font-family: 'Raleway' !important;
 }
 .tabs {
-    background-color: #E0F0FF !important;
-    border-color: #CCE6FD !important;
+    background-color: #c1bcc0 !important;
+    border-color: #BAB5B9 !important;
     color: #fff !important;
 }
 .tab-item {
@@ -134,8 +146,9 @@ img.socialicons {
     width: 10%;
 }
 .item-divider {
-    font-family: 'Lato';
+    font-family: 'Pacifico';
     font-size: 21px;
+    font-weight: normal;
 }
 .imageset {
     width: 95%;
@@ -170,30 +183,31 @@ img.socialicons {
 }
 .tabs .tab-item .badge.badge-royal,
 .badge.badge-royal {
-    background-color: #FFABD3 !important;
+    background-color: #918990 !important;
     color: #fff;
 }
 .imageheight {
     overflow: hidden
 }
 .button-royal2 {
-    background: #FF8D9E !important;
-    border-color: #F98192 !important;
+    background: #E27F7F !important;
+    border-color: #E27F7F !important;
     color: white;
 }
 .button-royal3 {
-    background: #9DFAAE !important;
-    border-color: #B4F4C8 !important;
+    background: #8FE89F !important;
+    border-color: #8FE89F !important;
     color: white;
 }
 .button-bold {
-    font-weight: bold;
+    /* font-weight: bold; */
+    font-size: 18px;
 }
 .ng-invalid.ng-dirty {
     border: 1px solid red;
 }
 .newsletterhome {
-    background: #FFDEEB;
+    background: #DDDDDD;
     margin-left: 5%;
     margin-right: 5%;
     padding: 12px;
