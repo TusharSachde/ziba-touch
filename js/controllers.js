@@ -11,9 +11,10 @@ angular.module('starter.controllers', ['myservices'])
 
 })
 
-.controller('HomeCtrl', function ($scope, $stateParams, MyServices) {
+.controller('HomeCtrl', function ($scope, $stateParams, MyServices, $ionicLoading) {
 
     var slidersuccess = function (data, status) {
+        $ionicLoading.hide();
         $scope.sliders = data;
     };
     MyServices.getallslider().success(slidersuccess);
@@ -33,6 +34,15 @@ angular.module('starter.controllers', ['myservices'])
                 MyServices.newsletter("", uemail, "").success(newslettersaved);
             }
         };
+    
+     //Loader
+    $ionicLoading.show({
+        template: 'Loading...',
+        animation: 'fade-in',
+        showBackdrop: false,
+        maxWidth: 200,
+        showDelay: 500
+    });
         //newsletter
 
 })
@@ -157,6 +167,7 @@ angular.module('starter.controllers', ['myservices'])
     var productId = $stateParams.pid;
 
     var onsuccess = function (data, status) {
+        $ionicLoading.hide();
         $scope.item = data;
         $scope.item.product.quantity2 = 1;
         console.log(data);
@@ -188,7 +199,7 @@ angular.module('starter.controllers', ['myservices'])
     };
     $timeout(function () {
         $ionicSlideBoxDelegate.update();
-        $ionicLoading.hide();
+        
     }, 2000);
 
     var changelocation = function (data) {
@@ -242,7 +253,7 @@ angular.module('starter.controllers', ['myservices'])
 })
 
 
-.controller('WishlistCtrl', function ($scope, $stateParams, MyServices) {
+.controller('WishlistCtrl', function ($scope, $stateParams, MyServices,$ionicLoading) {
     //get wishlist
     var authenticate = function (data, status) {
         $scope.userid = data.id;
@@ -252,8 +263,18 @@ angular.module('starter.controllers', ['myservices'])
 
     var onwishlistsuccess = function (data, status) {
         console.log(data);
+        $ionicLoading.hide();
         $scope.wishlists = data;
     }
+    
+     //Loader
+    $ionicLoading.show({
+        template: 'Loading...',
+        animation: 'fade-in',
+        showBackdrop: false,
+        maxWidth: 200,
+        showDelay: 500
+    });
 
 })
 
@@ -261,7 +282,7 @@ angular.module('starter.controllers', ['myservices'])
 
 })
 
-.controller('CartCtrl', function ($scope, $stateParams, MyServices) {
+.controller('CartCtrl', function ($scope, $stateParams, MyServices,$ionicLoading) {
     //Product details
     $scope.subtotal = 0;
     var onproductsuccess = function (data, status) {
@@ -281,6 +302,7 @@ angular.module('starter.controllers', ['myservices'])
     };
     MyServices.totalcart().success(getsubtotal);
     var onsuccess = function (data, status) {
+        $ionicLoading.hide();
         $scope.products = data;
 
         for (var i = 0; i < data.length; i++) {
@@ -291,6 +313,15 @@ angular.module('starter.controllers', ['myservices'])
     MyServices.getcart().success(onsuccess);
     //coupon
 
+    //Loader
+    $ionicLoading.show({
+        template: 'Loading...',
+        animation: 'fade-in',
+        showBackdrop: false,
+        maxWidth: 200,
+        showDelay: 500
+    });
+    
     $scope.discountamount = 0;
 
     function calcdiscountamount() {
