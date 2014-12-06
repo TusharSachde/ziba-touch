@@ -1,5 +1,6 @@
 /* Empty. Add your own CSS if you like */
 
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
 @font-face {
     font-family: 'Futura';
     src: url('futura-book.woff');
@@ -69,7 +70,7 @@ a {
 }
 .bar.bar-royal .title {
     color: #696969;
-    font-family: 'Pacifico' !important;
+    font-family: 'Pacifico', cursive!important;
     font-size: 22px;
     text-transform: lowercase;
     font-weight: normal;
@@ -146,7 +147,7 @@ img.socialicons {
     width: 10%;
 }
 .item-divider {
-    font-family: 'Pacifico';
+    font-family: 'Pacifico', cursive;
     font-size: 21px;
     font-weight: normal;
 }
@@ -207,9 +208,13 @@ img.socialicons {
     border: 1px solid red;
 }
 .newsletterhome {
-    background: #DDDDDD;
-    margin-left: 5%;
-    margin-right: 5%;
-    padding: 12px;
-    margin-bottom: 20px;
+    background: #F5F5F5;
+    padding: 5px 10px;
+    margin-bottom: 5px;
+}
+.row.no-pad {
+    padding: 0;
+}
+.row.no-pad .col {
+    padding: 0;
 }

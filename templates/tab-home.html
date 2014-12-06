@@ -1,59 +1,54 @@
 <ion-view title="Ziba">
     <ion-content class="has-header">
-        <center>
-            <a href="http://www.instagram.com/lyla_loves" target="_blank">
-                <img src="img/insta.png" class="socialicons">
-            </a>
-            <a href="https://www.twitter.com/lyla_loves" target="_blank">
-                <img src="img/twitter.png" class="socialicons">
-            </a>
-            <a href="https://www.facebook.com/lylaloves" target="_blank">
-                <img src="img/facebook.png" class="socialicons">
-            </a>
-            <a href="http://www.pinterest.com/lloves1548/" target="_blank">
-                <img src="img/pinterest.png" class="socialicons">
-            </a>
-            <a href="https://www.tumblr.com/blog/lylalovesblog" target="_blank">
-                <img src="img/tumbler.png" class="socialicons">
-            </a>
-
-            <div class="padding">
-                <a href="#/tab/dash">
-                    <img src="img/logo.jpg" style="width:40%;">
-                </a>
-            </div>
-
-            <div class="padding">
-                <div class="newsletterhome">
-                            <div class="row">
-                        <label class="item-input-wrapper royal">
-                            <input type="text" placeholder="Enter Email For Newsletter" ng-model="uemail" class="discountcoupon form-control newsletteremail " style="margin-right:5px;">
-                        </label>
-                        <button class="button button-royal button-small" ng-click="newsletter(uemail)">
-                            Go
-                        </button>
-                    </div>
+      <ion-nav-buttons side="right">
+            <button class="button button-icon icon ion-email" ng-click="showNews = !showNews;"></button>
+        </ion-nav-buttons>
+        
+       <div class="newsletterhome" ng-show="showNews">
+                <div class="row">
+                    <label class="item-input-wrapper royal">
+                        <input type="text" placeholder="Enter Email For Newsletter" ng-model="uemail" class="discountcoupon form-control newsletteremail " style="margin-right:5px;">
+                    </label>
+                    <button class="button button-royal button-small" ng-click="newsletter(uemail)">
+                        Go
+                    </button>
                 </div>
-                <img src="img/pick.png" style="width:90%;">
+            </div>
+        <img src="img/bg-menu.jpg" class="full-image">
+        <img src="img/ihz.jpg" class="full-image">
+        <div class="row no-pad">
+            <div class="col">
+                <img src="img/home-banner2.jpg" class="full-image">
+            </div>
+            <div class="col">
+                <img src="img/home-banner1.jpg" class="full-image">
+            </div>
+        </div>
 
-                <div class="productset">
-                    <div class="imageset">
-                        
-                        <ion-scroll direction="x">
-                            <div class="row">
-                                <div class="col col-20" ng-repeat="slider in sliders">
-                                    <a href="#/tab/home/product/{{slider.link}}">
-                                        <img src="{{slider.image|imagepath}}" class="full-image">
-                                        <p class="royal productprice">{{slider.price|convertprice}}</p>
-                                    </a>
-                                </div>
+<!--
+        <div class="padding">
+            
+            <img src="img/pick.png" style="width:90%;">
+
+            <div class="productset">
+                <div class="imageset">
+
+                    <ion-scroll direction="x">
+                        <div class="row">
+                            <div class="col col-20" ng-repeat="slider in sliders">
+                                <a href="#/tab/home/product/{{slider.link}}">
+                                    <img src="{{slider.image|imagepath}}" class="full-image">
+                                    <p class="royal productprice">{{slider.price|convertprice}}</p>
+                                </a>
                             </div>
-                        </ion-scroll>
+                        </div>
+                    </ion-scroll>
 
-                    </div>
                 </div>
-
             </div>
+
+        </div>
+-->
 
         </center>
     </ion-content>
