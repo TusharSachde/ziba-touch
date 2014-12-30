@@ -68,10 +68,10 @@ angular.module('starter.controllers', ['myservices'])
         }
     };
     $scope.imagewidth = {};
-    $scope.imagewidth.width = window.innerWidth / 3 - 15;
+    $scope.imagewidth.width = window.innerWidth / 2 - 15;
 
     $(window).resize(function () {
-        $scope.imagewidth.width = window.innerWidth / 3 - 15;
+        $scope.imagewidth.width = window.innerWidth / 2 - 15;
         console.log("Resized is called");
         $scope.$apply();
     });

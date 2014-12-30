@@ -19,7 +19,10 @@
             </ion-slide-box>
             <div class="row">
                 <div class="col">
-                    <h3 class="text-center"><span class="royal">{{item.product.price|convertprice}}</span></h3>
+                    <div class="price-bar">
+                            <p class="royal productprice">{{pro.price|convertprice}}</p>
+                            <hr>
+                        </div>
                     <p><strong>Description:</strong> {{item.product.description}}</p>
 
                     <p><strong style="float:left;">Quantity:</strong> <input type="number" ng-model="item.product.quantity2" class="numeric"> pcs</p>

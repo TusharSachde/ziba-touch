@@ -1,26 +1,127 @@
 /* Empty. Add your own CSS if you like */
 
-@import url(http://fonts.googleapis.com/css?family=Pacifico);
 @font-face {
     font-family: 'Futura';
-    src: url('futura-book.woff');
+    src: url(futura_medium.ttf);
     font-weight: normal;
 }
 @font-face {
     font-family: 'Futura';
-    src: url('futura-light.woff');
+    src: url(futura_book.ttf);
     font-weight: 100;
 }
 @font-face {
     font-family: 'Futura';
-    src: url('futura-bold.woff');
-    font-weight: 500;
+    src: url(futura_bold.ttf);
+    font-weight: bold;
 }
+@font-face {
+    font-family: 'Amantic';
+    src: url(Amatic-Bold.ttf);
+}
+@font-face {
+    font-family: 'FP Second Hand';
+    src: url(FP_second_hand.ttf);
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(Lato-Reg.ttf);
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Lato';
+    src: url(Lato-Lig.ttf);
+    font-weight: 100;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+i,
+u,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+fieldset,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
 input,
 button,
 select,
 textarea {
-    font-family: 'Futura' !important;
+    font-family: 'Futura';
+    font-weight: 100;
+    color: #838383;
 }
 .full-image {
     width: 100%;
@@ -46,7 +147,7 @@ a {
     float: right;
 }
 .royal {
-    color: #C1BCC0 !important;
+    color: #838383
 }
 .button-royal {
     background-color: #c1bcc0 !important;
@@ -70,8 +171,8 @@ a {
 }
 .bar.bar-royal .title {
     color: #696969;
-    font-family: 'Pacifico', cursive!important;
-    font-size: 22px;
+    font-family: 'Amantic', cursive!important;
+    font-size: 32px;
     text-transform: lowercase;
     font-weight: normal;
 }
@@ -83,6 +184,7 @@ a {
     border-color: #BAB5B9 !important;
     border-bottom-width: 2px;
     background-color: #c1bcc0 !important;
+    background-image: -webkit-linear-gradient(90deg, #c1bcc0, #c1bcc0 50%, transparent 50%) !important;
     background-image: linear-gradient(0deg, #c1bcc0, #c1bcc0 50%, transparent 50%) !important;
     color: #696969 !important;
 }
@@ -92,17 +194,6 @@ a {
 .item {
     color: #a8a8a8 !important;
     font-size: 14px;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-strong,
-p {
-    color: #a8a8a8;
-    font-family: 'Raleway' !important;
 }
 .tabs {
     background-color: #c1bcc0 !important;
@@ -146,8 +237,9 @@ p {
 img.socialicons {
     width: 10%;
 }
+.item-divider span,
 .item-divider {
-    font-family: 'Pacifico', cursive;
+    font-family: 'FP Second Hand', cursive;
     font-size: 21px;
     font-weight: normal;
 }
@@ -167,13 +259,6 @@ img.socialicons {
 }
 .toggle.right {
     right: -30px;
-}
-.productsCol+.productsCol {
-    border-top: 1px solid #ccc;
-}
-.productprice {
-    position: relative;
-    bottom: 0;
 }
 .productItem {
     position: relative;
@@ -217,4 +302,40 @@ img.socialicons {
 }
 .row.no-pad .col {
     padding: 0;
+}
+.price-bar hr {
+    border: 0;
+    background: #838383;
+    width: 90%;
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    top: 3px;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    height: 1px;
+}
+.productname {
+    font-family: 'Amantic', cursive !important;
+    font-size: 1.6em;
+}
+.productprice {
+    font-weight: 100;
+    text-align: center;
+    margin-top: 0;
+    color: #838383;
+    font-size: 1.3em;
+    display: inline-block;
+    background: white;
+    z-index: 1;
+    margin-bottom: 0px;
+    padding: 0 10px;
+    position: relative;
+    bottom: 0;
+}
+.price-bar {
+    position: relative;
+    text-align: center;
 }
