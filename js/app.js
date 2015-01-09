@@ -62,6 +62,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'myservices'])
         }
     })
     
+    .state('tab.iheartziba', {
+        url: '/iheartziba',
+        views: {
+            'tab-ihz': {
+                templateUrl: 'templates/tab-iheartziba.html',
+                controller: 'iheartzibaCtrl'
+            }
+        }
+    })
+    
     .state('tab.thankyou', {
         url: '/thankyou',
         views: {

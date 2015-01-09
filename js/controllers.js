@@ -908,4 +908,8 @@ angular.module('starter.controllers', ['myservices'])
 
 })
 
-.controller('OrderCtrl', function ($scope) {});
+.controller('OrderCtrl', function ($scope) {})
+
+.controller('iheartzibaCtrl', function ($scope) {})
+
+;

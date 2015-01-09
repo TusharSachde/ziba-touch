@@ -339,3 +339,6 @@ img.socialicons {
     position: relative;
     text-align: center;
 }
+.minus-margin img {
+    margin-bottom: -5px;
+}
