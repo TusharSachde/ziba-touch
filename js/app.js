@@ -62,12 +62,31 @@ angular.module('starter', ['ionic', 'starter.controllers', 'myservices'])
         }
     })
     
+    .state('tab.homeitems', {
+        url: '/homecategories/:cid',
+        views: {
+            'tab-home': {
+                templateUrl: 'templates/shop-items.html',
+                controller: 'ItemCtrl'
+            }
+        }
+    })
+    
     .state('tab.iheartziba', {
         url: '/iheartziba',
         views: {
             'tab-ihz': {
                 templateUrl: 'templates/tab-iheartziba.html',
                 controller: 'iheartzibaCtrl'
+            }
+        }
+    })
+        .state('tab.iheartzibaitems', {
+        url: '/iheartzibacategories/:cid',
+        views: {
+            'tab-ihz': {
+                templateUrl: 'templates/shop-items.html',
+                controller: 'ItemCtrl'
             }
         }
     })
@@ -111,6 +130,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'myservices'])
             }
         }
     })
+    
+     .state('tab.itemshome', {
+        url: '/home/:cid',
+        views: {
+            'tab-dash': {
+                templateUrl: 'templates/shop-itemshome.html',
+                controller: 'ItemCtrl'
+            }
+        }
+    })
+    
     .state('tab.producthome', {
         url: '/home/product/:pid',
         views: {

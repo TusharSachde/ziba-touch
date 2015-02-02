@@ -341,3 +341,9 @@ img.socialicons {
 .minus-margin img {
     margin-bottom: -5px;
 }
+.minus-margin ion-item img {
+margin-bottom: -5px;
+}
+.ion-removepad.item-complex .item-content {
+padding: 0px;
+}
