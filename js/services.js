@@ -1,4 +1,5 @@
-var adminurl = 'http://lyla@lylaloves.co.uk/admin/index.php/json/';
+var adminurl = 'http://zibalatest.appspot.com/admin/index.php/json/';
+var adminurl2 = 'http://zibalatest.appspot.com/admin/index.php/json/';
 
 var conversionrate = [{
     id: "1",
