@@ -18,7 +18,7 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- ionic/angularjs js -->
     <script src="lib/ionic/js/ionic.bundle.js"></script>
-<!--
+
     <script>
         var isMobile = {
             Android: function () {
@@ -42,10 +42,10 @@
         };
 
         if (!isMobile.any()) {
-            window.location = "http://www.lylaloves.co.uk"+window.location.hash;
+            window.location = "http://www.zibacollection.co.uk"+window.location.hash;
         }
     </script>
--->
+
     <!-- cordova script (this will be a 404 during development) -->
     <!--    <script src="cordova.js"></script>-->
 
